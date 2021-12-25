@@ -20,6 +20,10 @@ public class Credential {
 
     }
 
+    public Credential() {
+
+    }
+
     public Integer getCredentialId() {
         return credentialId;
     }

@@ -11,6 +11,12 @@ public class Note {
         this.noteDescription = noteDescription;
         this.userId = userId;
     }
+
+    public Note() {
+
+    }
+
+
     public String getNoteTitle() {
         return noteTitle;
     }
