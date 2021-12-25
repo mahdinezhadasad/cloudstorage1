@@ -27,7 +27,7 @@ class CloudStorageApplicationTests {
 	public static WebDriver driver;
 	private String email = "mahdi@gmail.com";
 	private String password = "Mahdi.123";
-	private String noteTitle ="how to become successfull";
+	private String noteTitle ="successfull";
 	private String noteDescription = "Note Description Test";
 	private String url = "google.com";
 	private String userName = "wecllap.com";
@@ -296,7 +296,7 @@ class CloudStorageApplicationTests {
 		String noteDescriptionEdited = noteDescription + "EditedDescription";
 
 		noteTab.editNote(noteTitle+1,noteTitleEdited,noteDescriptionEdited);
-		Assertions.assertTrue(!resultPage.checkSucessMessage());
+		Assertions.assertTrue(resultPage.checkSucessMessage());
 		resultPage.clickContinue();
 
 		Assertions.assertTrue(noteTab.checkIfNoteExists(noteTitleEdited));
