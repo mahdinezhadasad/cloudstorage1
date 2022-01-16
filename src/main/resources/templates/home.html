@@ -9,6 +9,11 @@
 <body class="p-3 mb-2 bg-light text-black">
 <div class="container">
     <div id="logoutDiv">
+        <div class="alert alert-danger alert-dismissible fade show" role="alert" th:if="${error}" th:text="${error}">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
         <form action="#" th:action="@{/logout}" method="POST">
             <button type="submit" class="btn btn-secondary float-right">Logout</button>
         </form>

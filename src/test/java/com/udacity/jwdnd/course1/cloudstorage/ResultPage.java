@@ -37,5 +37,6 @@ public class ResultPage {
 
         js.executeScript("arguments[0].click();",aHere);
 
+
     }
 }
